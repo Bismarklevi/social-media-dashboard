@@ -9,6 +9,7 @@ const terser = require('gulp-terser');
 const { default: gulp } = require('gulp');
 const browsersync = require('browser-sync').create();
 
+
 // Use dart-sass for @use
 //sass.compiler = require('dart-sass');
 
@@ -61,4 +62,4 @@ function watchTask() {
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
-exports.build = series(scssTask, jsTask);
+// exports.build = series(scssTask, jsTask);
