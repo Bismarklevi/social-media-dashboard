@@ -2,13 +2,21 @@
 
 .header{
    
-    @include breakpoint(large){
+    @include breakpoint(medium){
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-top: rem(36);
     }
 
     &__title{
-       
+       width: auto;
+    }
+
+    &__subtitle{
+        font-size: rem(14);
+        font-weight: 700;
+        color: var(--dark-text1);
     }
 
     &__toggle{

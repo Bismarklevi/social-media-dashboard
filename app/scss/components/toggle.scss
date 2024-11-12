@@ -4,11 +4,11 @@
     border: none;
 
     &__wrapper{
-
+        height: rem(24);   
     }
 
     input[type="radio"]{
-
+        opacity: 0;
     }
 
     &__button{
@@ -17,9 +17,18 @@
         border-radius: 50%;
         background-color: var(--toggle);
     }
+
     &__background{
-        
+        height: 100%;
+        display: block;
+        background:linear-gradient(225deg,
+         var( --toggle-bg-start) 0%, 
+         var(--toggle-bg-end) 98.02%
+         );
+         border-radius: rem(12);
+        overflow: hidden;
     }
+
     label{
         
     }
