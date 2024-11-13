@@ -4,8 +4,8 @@
 
 .cards{
         display: grid;
-       grid-template-columns: 1fr;
-       gap: rem(30);
+        grid-template-columns: 1fr;
+        gap: rem(30);
 
         @include breakpoint(medium){
             grid-template-columns: repeat(2, 1fr);
@@ -23,6 +23,11 @@
     text-align: center;
     padding: rem(25);
     border-radius: rem(5);
+
+    &:hover{
+        background: var( --dark-card-hover);
+        cursor: pointer;
+    }
 
     &--facebook{
         border-top: rem(5) solid var(--facebook);
@@ -99,6 +104,7 @@
         letter-spacing: rem(-2);
         margin-bottom: rem(4);
 
+
         &--big{
             font-size: rem(56);
         }
@@ -131,6 +137,7 @@
             color: var(--brightred);
         }
     }
+
     img{
         margin-right: rem(4);
     }
