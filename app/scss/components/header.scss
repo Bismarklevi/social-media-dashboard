@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: rem(30);
+    
    
     @include breakpoint(medium){
         justify-content: space-between;
@@ -14,6 +15,8 @@
     &__title{
        width: auto;
 
+
+
        @include breakpoint(medium){
         width: auto;
        }
@@ -22,11 +25,13 @@
     &__subtitle{
         font-size: rem(14);
         font-weight: 700;
-        color: var(--dark-text1);
+        color: var(--text-color);
     }
 
     &__toggle{
         margin-left: auto;
         
     }
+
+    
 }

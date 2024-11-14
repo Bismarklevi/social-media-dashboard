@@ -2,7 +2,7 @@
 
 .toggle{
     display: grid;
-    grid-template-columns: 1fr rem(48);
+    grid-template-columns: 1fr 3rem;
     // grid-template-rows: repeat(2, 1fr);
     gap: rem(4.8) rem(12);
     border: none;
@@ -16,23 +16,25 @@
     label{
       font-size: rem(14);
       font-weight: 700;
-      color: var(--toggle);
+      color: var(--text-color);
       align-self: center;
 
       &[for='dark']{
-        grid-column: 1/2;
-        justify-self: end;
+        // grid-column: 1/2;
+        // justify-self: end;
+        line-height: rem(24);
+        margin-right: rem(5);
       }   
 
-      &[for='system']{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        justify-self: center;
-      }
+      // &[for='system']{
+      //   grid-column: 1/4;
+      //   grid-row: 2/3;
+      //   justify-self: center;
+      // }
 
-      &[for='light']{
-        grid-column: 3/4;
-      }   
+      // &[for='light']{
+      //   grid-column: 3/4;
+      // }   
       
     }
 
@@ -60,9 +62,7 @@
         display: block;
         position: absolute;
         top: 0;
-         background: linear-gradient(225deg,
-          var(--toggle-bg-start) 0%, 
-          var(--toggle-bg-end) 98.02% );
+        background: var(--toggle-bg);
         border-radius: rem(12);
         overflow: hidden;
 
