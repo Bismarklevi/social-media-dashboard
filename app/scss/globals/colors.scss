@@ -30,7 +30,7 @@
     --toggle-button: var(--toggle-button-light);
 }
 
-@media (prfers-color-scheme:dark){
+@media (prefers-color-scheme:dark){
     :root{
     --background : var(--dark-bg);
     --text-color : var(--dark-text2);
